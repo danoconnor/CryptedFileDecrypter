@@ -1,0 +1,47 @@
+﻿<Page x:Class="CryptedFileDecrypter.DecryptionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CryptedFileDecrypter"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1050"
+      Title="Decryption">
+
+    <Page.Resources>
+        <Thickness x:Key="ColumnItemMargin">20,0,20,20</Thickness>
+    </Page.Resources>
+
+    <Grid Margin="{StaticResource StandardPageMargin}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Step 3: Decrypt files!" Grid.Row="0" Grid.ColumnSpan="3" Style="{StaticResource TitleTextBlockStyle}" />
+
+        <Grid Drop="FileDrop" AllowDrop="True" Height="50" Background="LightGray" Grid.Row="1" Grid.Column="0" Margin="{StaticResource ColumnItemMargin}">
+            <TextBlock Text="Drag &amp; drop .crypted files here" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Grid>
+
+        <Button Content="Pick files" Click="ShowFilePickerDialog" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="{StaticResource ColumnItemMargin}" />
+
+        <Button Content="Pick a folder" Click="ShowFolderPickerDialog" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="{StaticResource ColumnItemMargin}" />
+
+        <!--<TextBox Text="{Binding Messages, Mode=OneWay}" FontSize="16" Grid.Row="2" Grid.ColumnSpan="3" />-->
+        <ListView ItemsSource="{Binding Messages, Mode=OneWay}" Grid.Row="2" Grid.ColumnSpan="3" >
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="VerticalAlignment" Value="Center" />
+                    <Setter Property="Margin" Value="0,0,0,5" />
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
+    </Grid>
+</Page>

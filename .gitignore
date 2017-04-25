@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CryptedFileDecrypter/bin/Debug
+/CryptedFileDecrypter/obj/Debug
+/CryptedFileDecrypter/obj/Debug
+/CryptedFileDecrypter/obj/Debug
+/CryptedFileDecrypter/obj/Debug
+/.vs/CryptedFileDecrypter/v15
+/packages/WindowsAPICodePack-Core.1.1.2
+/packages/WindowsAPICodePack-Shell.1.1.1

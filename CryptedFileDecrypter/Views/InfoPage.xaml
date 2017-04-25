@@ -1,0 +1,24 @@
+﻿<Page x:Class="CryptedFileDecrypter.InfoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CryptedFileDecrypter"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1050"
+      Title="Important information">
+
+    <StackPanel Margin="{StaticResource StandardPageMargin}">
+        <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Important information" />
+
+        <TextBlock Margin="{StaticResource InfoPageTextBlockMargin}">
+            This tool is designed to decrypt files that have been encrypted by the <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://www.webroot.com/blog/2016/08/16/nemucod-ransomware-analysis/">Nemucod Randsomware virus</Hyperlink>.
+        </TextBlock>
+
+        <TextBlock Text="If you have been infected with this virus, then many of your files will have the .crypted extension added onto the original file name and you will be unable to open them. This tool can help you fix those files." Margin="{StaticResource InfoPageTextBlockMargin}" />
+        <TextBlock Text="This tool WILL NOT remove the virus from your computer." FontWeight="Bold" />
+        <TextBlock Text="It will only fix files that have been encrypted by the virus. To remove the virus from your computer, you will likely need to do a full reinstall of Windows. If you are unsure or uncomfortable reinstalling Windows, then you are advised to seek professional help. Large stores that sell computers generally have an IT department that can help you." Margin="{StaticResource InfoPageTextBlockMargin}" />
+
+        <Button Content="Continue" Click="NavToKeyCalculationInfoPage" Width="300" Margin="0,20,0,0"/>
+    </StackPanel>
+</Page>

@@ -1,0 +1,32 @@
+﻿<Page x:Class="CryptedFileDecrypter.KeyCalculationInfoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CryptedFileDecrypter"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1050"
+      Title="Getting started">
+
+    <Page.Resources>
+        <Thickness x:Key="BulletPointListMargin">20,5,0,5</Thickness>
+    </Page.Resources>
+    
+    <StackPanel Margin="{StaticResource StandardPageMargin}">
+        <TextBlock Style="{StaticResource TitleTextBlockStyle}" Text="Getting started" />
+
+        <TextBlock Text="To begin, you'll need to locate an unencrypted backup of a file that has been encrypted. You'll only need to find one unencrypted backup file, and then this tool will be able to decrypt the rest of your encrypted files." Margin="{StaticResource InfoPageTextBlockMargin}" />
+
+        <TextBlock Text="Here are some common places where you might find an unencrypted backup:" />
+
+        <TextBlock Margin="{StaticResource BulletPointListMargin}">• <Bold>Email attachments</Bold> - Check your inbox and sent mail folders for any email attachments that may also have been saved (and now encrypted) on your PC. Re-downloading the email attachment might give you a valid backup of the encrypted file saved on your PC.</TextBlock>
+        <TextBlock Margin="{StaticResource BulletPointListMargin}">• <Bold>Camera photos</Bold> - Check your cell phone or digital camera for copies of photos that were saved on your PC. The phone or camera version may be a valid backup file to the encrypted photo stored on your PC." Margin="{StaticResource BulletPointListMargin}</TextBlock>
+        <TextBlock Margin="{StaticResource BulletPointListMargin}">• <Bold>Internet downloads</Bold> - Take a look at the encrypted files in the downloads folder on your PC. Try to re-download the same file from the internet again. The new downloaded version may be a valid backup file to the encrypted version stored on your PC." Margin="{StaticResource BulletPointListMargin}</TextBlock>
+        <TextBlock Margin="20,5,0,20">• <Bold>External or cloud storage</Bold> - Try to locate backups on any flash drive, external hard drive, or cloud storage service that you use.</TextBlock>
+
+        <TextBlock Text="Remember that you only need to find one backup file and then this tool will be able to decrypt the rest of your files." Margin="{StaticResource InfoPageTextBlockMargin}" />
+        <TextBlock Text="Once you have located an unencrypted backup and it's encrypted counterpart, click continue. You will use both of these files on the next page." Margin="{StaticResource InfoPageTextBlockMargin}" />
+
+        <Button Content="Continue" Click="NavToKeyCalculationPage" Width="300" Margin="0,20,0,0"/>
+    </StackPanel>
+</Page>
