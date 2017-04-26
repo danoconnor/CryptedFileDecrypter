@@ -10,3 +10,8 @@
 /.vs/CryptedFileDecrypter/v15
 /packages/WindowsAPICodePack-Core.1.1.2
 /packages/WindowsAPICodePack-Shell.1.1.1
+/Source/packages
+/Source/.vs
+/Source/CryptedFileDecrypter/bin/Debug
+/Source/CryptedFileDecrypter/obj
+/Source/packages
