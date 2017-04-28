@@ -5,4 +5,5 @@ If many of your personal files have been changed to end in ".crypted" and you ar
 
 See the Wiki for more information:
 * [How to use the Crypted File Decrypter](https://github.com/danoconnor/CryptedFileDecrypter/wiki/Using-the-Crypted-File-Decrypter)
-* [About this tool](https://github.com/danoconnor/CryptedFileDecrypter/wiki/About-the-tool)
+* [Background](https://github.com/danoconnor/CryptedFileDecrypter/wiki/Background)
+* [How the decrypter works](https://github.com/danoconnor/CryptedFileDecrypter/wiki/How-the-decrypter-works)
