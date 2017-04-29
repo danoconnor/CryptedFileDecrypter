@@ -34,7 +34,6 @@
 
         <Button Content="Pick a folder" Click="ShowFolderPickerDialog" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="{StaticResource ColumnItemMargin}" />
 
-        <!--<TextBox Text="{Binding Messages, Mode=OneWay}" FontSize="16" Grid.Row="2" Grid.ColumnSpan="3" />-->
         <ListView ItemsSource="{Binding Messages, Mode=OneWay}" Grid.Row="2" Grid.ColumnSpan="3" >
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">

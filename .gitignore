@@ -15,3 +15,5 @@
 /Source/CryptedFileDecrypter/bin/Debug
 /Source/CryptedFileDecrypter/obj
 /Source/packages
+/Source/CryptedFileDecrypter/bin/Release/CryptedFileDecrypter.application
+/Source/CryptedFileDecrypter/bin/Release/app.publish
