@@ -20,7 +20,7 @@
         <TextBlock Text="Here are some common places where you might find an unencrypted backup:" />
 
         <TextBlock Margin="{StaticResource BulletPointListMargin}">• <Bold>Email attachments</Bold> - Check your inbox and sent mail folders for any email attachments that may also have been saved (and now encrypted) on your PC. Re-downloading the email attachment might give you a valid backup of the encrypted file saved on your PC.</TextBlock>
-        <TextBlock Margin="{StaticResource BulletPointListMargin}">• <Bold>Camera photos</Bold> - Check your cell phone or digital camera for copies of photos that were saved on your PC. The phone or camera version may be a valid backup file to the encrypted photo stored on your PC." Margin="{StaticResource BulletPointListMargin}</TextBlock>
+        <TextBlock Margin="{StaticResource BulletPointListMargin}">• <Bold>Camera photos</Bold> - Check your cell phone or digital camera for copies of photos that were saved on your PC. The phone or camera version may be a valid backup file to the encrypted photo stored on your PC."</TextBlock>
         <TextBlock Margin="{StaticResource BulletPointListMargin}">• <Bold>Internet downloads</Bold> - Take a look at the encrypted files in the downloads folder on your PC. Try to re-download the same file from the internet again. The new downloaded version may be a valid backup file to the encrypted version stored on your PC."</TextBlock>
         <TextBlock Margin="20,5,0,20">• <Bold>External or cloud storage</Bold> - Try to locate backups on any flash drive, external hard drive, or cloud storage service that you use.</TextBlock>
 
